@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 header {
     background-color: black;
@@ -80,8 +80,69 @@ span {
 .clearfix::after {
     content: "";
     clear: both;
-    display: block;
+    /* display: block; */
   }
-  
 
+.one {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fcfcfc, #f9f9f9, #f6f6f6, #efefef, #e9e9e9, #e2e2e2, #dcdcdc);
+    height: 500px;
+    display: flex;
+}
+
+.section1-layout  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one {
+    font-family: 'Raleway', sans-serif;
+}
+
+.chair {
+    flex: 1;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    padding: 80px;
+    box-sizing: content-box;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.btn {
+        background-color: #24baa0;
+        width: 200px;
+        height: 50px;
+        /* margin: 20px; */
+        align-items: center;
+        /* line-height: 50px; */
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        border-radius: 10px;
+        align-self: center;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+
+}
+
+.center-me {
+  display: flex;
+  }
+
+div.btn {
+  margin: 50px auto auto auto;
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
   /* koniec header  */
