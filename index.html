@@ -8,34 +8,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">   
     <link href="./fonticon/css/all.css" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
         <div class="container head">
-            <div>
-                <p>sit <span>on</span> chair</p>
+            <div class="head__logo">
+                    <p>SIT <span>ON</span> CHAIR</p>
             </div>
-
-            <div class="headmenu">
+    
+            <div class="head__menu">
                 <ul>
                     <li>
-                        <a href="#">o firmie</a>
+                        <a href="#">COMPANY</a>
                     </li>
                     <li>
-                        <a href="#">galeria</a>
+                        <a href="#">GALLERY</a>
                     </li>
                     <li>
-                        <a href="#">kontakt</a>
+                        <a href="#">CONTACT</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-
     <nav>
         <div class="container navigation">
             <i class="fas fa-chevron-left"></i>
@@ -54,138 +52,132 @@
     </nav>
 
     <section>
-        <div class="container images">
-            <div>
-                <img src="./images/box1_img.jpg" alt="box1">
-            </div>
-
-            <div>
-                <img src="./images/box2_img.jpg" alt="box2">
-            </div>
-
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae fugit sapiente cumque.
-                    Facilis quidem laudantium asperiores ut eos laboriosam commodi consequuntur fugiat tempora illo,
-                    nobis magnam, autem enim.</p>
+        <div class="container slider">
+            <div class="slider__img">
+                <div class="slider__img--style">
+                    <img src="./images/box1_img.jpg" alt="box1">
+                </div>
+            
+                <div class="slider__img--style">
+                    <img src="./images/box2_img.jpg" alt="box2">
+                </div>
+            
+                <div class="slider__img--style">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae fugit sapiente cumque.
+                        Facilis quidem laudantium asperiores ut eos laboriosam commodi consequuntur fugiat tempora illo,
+                        nobis magnam, autem enim.</p>
+                </div>
             </div>
         </div>
-    </section>
-
-    <main>
+        </section>
+        <main>
         <div class="container">
             <div class="prize">
                 <h1>cennik</h1>
             </div>
             <div class="menu">
-
-                <div class="oferta">
-                    <div class="up">
+                <div class="menu__item">
+                    <div class="menu__item--up">
                         <h2 class="mgr">basic plan</h2>
                         <div>
                             <h2>85,99<br>pln/msc</h2>
                         </div>
                     </div>
 
-                    <div class="option1">
+                    <div class="menu__item--option1">
                         <p>Zakup towaru + dowóz</p>
                     </div>
 
-                    <div class="option2">
+                    <div class="menu__item--option2">
                         <p>Serwis</p>
                     </div>
-                    <div class="mgrbtn">
+                    <div class="menu__item--btn">
                         <button>Dołącz</button>
                     </div>
                 </div>
-
-
-
-
-                <div class="oferta">
-                    <div class="up">
-                        <h2 class="mgr">standard plan</h2>
+                <div class="menu__item">
+                    <div class="menu__item--up">
+                        <h2 class="mgr">basic plan</h2>
                         <div>
                             <h2>85,99<br>pln/msc</h2>
                         </div>
                     </div>
 
-                    <div class="option1">
+                    <div class="menu__item--option1">
                         <p>Zakup towaru + dowóz</p>
                     </div>
 
-                    <div class="option2">
+                    <div class="menu__item--option2">
                         <p>Serwis</p>
                     </div>
-
-                    <div class="option1">
-                        <p>Gwarancja 5 lat</p>
-                    </div>
-
-                    <div class="mgrbtn">
+                    <div class="menu__item--btn">
                         <button>Dołącz</button>
                     </div>
                 </div>
-
-                <div class="oferta">
-                    <div class="up">
-                        <h2 class="mgr">advance plan</h2>
+                <div class="menu__item">
+                    <div class="menu__item--up">
+                        <h2 class="mgr">basic plan</h2>
                         <div>
                             <h2>85,99<br>pln/msc</h2>
                         </div>
                     </div>
 
-                    <div class="option1">
+                    <div class="menu__item--option1">
                         <p>Zakup towaru + dowóz</p>
                     </div>
 
-                    <div class="option2">
+                    <div class="menu__item--option2">
                         <p>Serwis</p>
                     </div>
-
-                    <div class="option1">
-                        <p>Gwarancja 6 lat</p>
-                    </div>
-
-                    <div class="option2">
-                        <p>Porady projektanta</p>
-                    </div>
-                    <div class="mgrbtn">
+                    <div class="menu__item--btn">
                         <button>Dołącz</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
 
-    <footer>
-
-        <div class="container foot">
-
-            <div class="firstdiv">
-                <div class="prize">
+    <section>
+        <div class="container form">
+            <div class="form__info">
+                <div class="form__info--text">
                     <h1>kontakt</h1>
                 </div>
-                <div class="inputstyle">
+                <div class="form__style">
                     <input type="text" placeholder="imię">
                     <input type="email" placeholder="email">
                     <textarea cols="30" rows="10" placeholder="wiadomość"></textarea>
                 </div>
-
             </div>
-            
-            <div class="seconddiv">
+            <div class="form__send">
                 <img src="./images/red_chair.png" alt="red chair">
-                <form action="">
+                <form>
                     <input type="radio">
                     Zgadzam się na przetwarzanie danych osobowych 
                 </form>
-                <button>WYŚLIJ</button>
+                <button class="form__send--btn">WYŚLIJ</button>
             </div>
-
         </div>
-
+    </section> 
+    <footer>
+      <div class="container footer">
+          <div class="footer__text">
+              <p>Copyright 2014 | All Rights Reserved - Sit On Chair</p>
+          </div>
+          <div class="footer__social">
+              <div class="footer__social--icon">
+                  <img src="./images/flickr.png" alt="icon">
+                  <img src="./images/vimeo.png" alt="icon">
+                  <img src="./images/pinterest.png" alt="icon">
+                  <img src="./images/twitter.png" alt="icon">
+              </div>
+              <div class="footer__scoial--text">
+                  SIT <span>ON</span> CHAIR
+              </div>
+          </div>
+      </div>  
     </footer>
+    <script src="./app.js"></script>
 </body>
 
 </html>
