@@ -12,7 +12,7 @@
     margin-left:  auto; 
     max-width: 1400px;
     font-family: 'Raleway', sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 header {
@@ -21,30 +21,75 @@ header {
 .head {
     display: flex;
     justify-content: space-between;
+    height: 40px;
 }
 .head__logo {
     color: white;
-    border: 5px solid pink;
     display: flex;
     align-items: center;
 }
 .head__menu {
-     border: 5px solid green;
      width: 500px;
-}
+    }
 .head__logo span { 
     font-weight: bold;
     color: rgb(21,190,161);
+}
+.head__menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+
 }
 .head__menu a {
     color: white;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
 }
+.head__menu--item {
+    margin-top: 100px;
+    background-color: green;
+}
+nav {
+    height: 500px;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fcfcfc, #f9f9f9, #f6f6f6, #efefef, #e9e9e9, #e2e2e2, #dcdcdc);
+}
 
-
-/* 
-button {
+.navigation {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation i {
+    font-size: 80px;
+    color: rgb(21,190,161);
+}
+.navigation__text {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    width: 536px;
+    height: 290px;
+    margin-right: 100px;
+    text-align: center;
+}
+.navigation__text p {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+.navigation__text h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.navigation__text span {
+    color: rgb(21,190,161);
+}
+.navigation button {
     background-color: #24baa0;
     width: 200px;
     height: 50px;
@@ -58,7 +103,40 @@ button {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    margin-top: 15px;
+    border: none;
 }
+.slider {
+    height: 349px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider__img {
+    width: 420px;
+}
+.slider__img img {
+    width: 100%;
+    height: 100%;
+}
+.slider__text {
+    margin-right: 60px;
+    width: 420px;
+    height: 287.23px;
+}
+.slider__text p {
+    margin: 5px;
+}
+.slider__text div {
+    margin-top: 15px;
+    margin-bottom: 18px;
+    border-bottom: 8px solid #24baa0;
+    width: 250px;
+}
+
+
+ 
+/* 
 
 header {
     width: 100%;
