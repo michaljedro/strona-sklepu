@@ -6,13 +6,11 @@
 .body {
     font-family: 'Raleway', sans-serif;
 }
-
 .container {
-    margin-right: auto; 
-    margin-left:  auto; 
+    margin: 0 auto;
     max-width: 1400px;
     font-family: 'Raleway', sans-serif;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 header {
@@ -119,6 +117,11 @@ nav {
     width: 100%;
     height: 100%;
 }
+
+.slider__text {
+    border: 2px solid #ccc;
+    padding: 10px;
+}
 .slider__text {
     margin-right: 60px;
     width: 420px;
@@ -132,6 +135,14 @@ nav {
     margin-bottom: 18px;
     border-bottom: 8px solid #24baa0;
     width: 250px;
+}
+
+.offert {
+    display: grid;
+    grid-template-areas: 
+    'offert__prize'
+    'basic standard advance'
+    ;
 }
 
 
