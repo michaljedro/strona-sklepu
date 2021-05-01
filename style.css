@@ -62,9 +62,28 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
+.navigation__img {
+    width: 481px;
+    height: 357px;
+}
+
 .navigation i {
     font-size: 80px;
     color: rgb(21,190,161);
+}
+.navigation__chair{
+    display: none;
+    height: 100%;
+    text-align: center;
+    padding: auto 0;
+}
+.navigation__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.visible {
+    display: block;
 }
 .navigation__text {
     text-transform: uppercase;
@@ -144,7 +163,6 @@ nav {
     'basic standard advance'
     ;
 }
-
 
  
 /* 
