@@ -28,3 +28,5 @@ btnPrevious.addEventListener('click', function () {
     }
     images[imagesCounter].classList.toggle('visible');
 })
+
+

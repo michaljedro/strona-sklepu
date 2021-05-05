@@ -10,7 +10,7 @@
     margin: 0 auto;
     max-width: 1400px;
     font-family: 'Raleway', sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 header {
@@ -142,7 +142,6 @@ nav {
     padding: 10px;
 }
 .slider__text {
-    margin-right: 60px;
     width: 420px;
     height: 287.23px;
 }
@@ -155,16 +154,82 @@ nav {
     border-bottom: 8px solid #24baa0;
     width: 250px;
 }
-
+main {
+    background-color: rgb(241,241,241);
+}
 .offert {
-    display: grid;
-    grid-template-areas: 
-    'offert__prize'
-    'basic standard advance'
-    ;
+    height: 725px;
+}
+.offert__prize h1 {
+    width: 375px;
+    margin-top: 50px;
+    border-bottom: 5px solid #24baa0;
+}
+.offert__item {
+    margin-top: 80px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;  
+}
+.offert__item--basic {
+    border: 1px solid red;
+    height: 503px;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #c2c2c2;
+
 }
 
- 
+.offert__item--standard {
+    height: 503px;
+    width: 375px;
+    background-color: rgb(39,199,171);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.offert__item--advance {
+    height: 503px;
+    width: 375px;
+    border: 2px solid #c2c2c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.offert__item--up {
+    border: 2px solid #c2c2c2;
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.offert__item--plan1 {
+    color: #24baa0;
+}
+.offert__item--plan2 {
+    color: white;
+}
+.offert__item--option1 {
+    background-color: rgb(228,228,228);
+    width: 99%;
+    text-align: center;
+    padding: 5px;
+}
+.offert__item--option1 p {
+    margin: 5px;
+}
+
 /* 
 
 header {
