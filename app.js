@@ -30,3 +30,9 @@ btnPrevious.addEventListener('click', function () {
 })
 
 
+// drop down menu 
+
+let head__menu_dropdown = document.querySelector('.head__menu--dd');
+
+
+
