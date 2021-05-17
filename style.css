@@ -14,6 +14,13 @@
 
 header {
     background-color:rgb(0,0,0);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.shit {
+    color: white;
 }
 .head {
     display: flex;
@@ -24,68 +31,58 @@ header {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 .head__logo span { 
     font-weight: bold;
     color: rgb(21,190,161);
 }
-.head__menu {
-     width: 500px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+
+
+
+.head {
+    border: 3px solid red;
 }
-.head__menu button, .head__menu a {
-    background: none;
-    outline: none;
-    border: none;
-    color: white;
-    text-decoration: none;
+.drop {
+    width: 50%;
+    height: 100%;
+    border: 1px solid green;
+}
+.drop ul {
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown {
+    background: yellow;
+}
+li {
+    display: block;
+    transition-duration: 0.5s;
+}
+li:hover {
+    cursor: pointer;
+}
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all .5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
 }
 
-.head__menu--dd {
-    position: relative;
+ul li:hover > ul, ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
 }
-.head__menu--dd ul {
-    position: absolute;
-    top: 40px;
-    left: -75px;
-    background-color: black;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.4s ease;
-}
-.head__menu--dd li {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.head__menu--dd button ul:hover + ul {
-    background-color: #24baa0;
-}
-.head__menu--dd a {
-    color: white;
-    text-decoration: none;
-}
-.head__menu button, .head__menu--btn {
-background: none;
-  text-decoration: none;
-  border: none;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-}
-.head__menu--dd .btn ul:hover ul li {
-    background-color: red;
-}
+
+
+
+
+
+
 
 .head__menu--item {
     margin-top: 100px;
