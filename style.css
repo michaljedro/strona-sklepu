@@ -18,6 +18,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 99;
 }
 
 * {
@@ -95,10 +96,6 @@ header {
     clear: both;
     width: 100%;
   }
-
-
-
-
 
 .head__menu--item {
     margin-top: 100px;
@@ -222,7 +219,31 @@ main {
     margin-top: 80px;
     height: 500px;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between; 
+    position: relative; 
+}
+.offert__item--circle2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background:white;
+    position: absolute;
+    top: -30px;
+    border: 1px solid rgb(194,194,194);
+    z-index: 1;
+}
+.offert__item--circle1 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background:rgb(194,194,194);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 .offert__item--basic {
     height: 503px;
