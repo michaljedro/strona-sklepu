@@ -245,6 +245,29 @@ main {
     right: 0;
     z-index: 2;
 }
+.offert__item--circle4 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background:rgb(39,199,171);
+    position: absolute;
+    top: -30px;
+    border: 1px solid rgb(39,199,171);
+    z-index: 1;
+}
+.offert__item--circle3 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background:white;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
 .offert__item--basic {
     height: 503px;
     width: 375px;
@@ -299,6 +322,40 @@ main {
 }
 .offert__item--option1 p {
     margin: 5px;
+}
+.offert__item--btn button {
+        border: 5px solid black;
+        width: 121px;
+        height: 36px;
+        background-color:rgb(38,197,169);
+        border-radius:4px;
+        display:inline-block;
+        outline: none;
+        border: none;
+        cursor:pointer;
+        color:#ffffff;
+        font-family: 'Raleway', sans-serif;
+        font-size:15px;
+        padding:6px 15px;
+        margin-right: auto;
+        text-decoration:none;
+}
+.offert__item--standard button {
+    border: 5px solid black;
+    width: 121px;
+    height: 36px;
+    background-color:rgb(255,255,255);
+    border-radius:4px;
+    display:inline-block;
+    outline: none;
+    border: none;
+    cursor:pointer;
+    color:rgb(38,197,169);
+    font-family: 'Raleway', sans-serif;
+    font-size:15px;
+    padding:6px 15px;
+    margin-right: auto;
+    text-decoration:none;
 }
 .form {
     display: flex;
