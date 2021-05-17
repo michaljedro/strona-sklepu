@@ -40,47 +40,76 @@ header {
 
 
 
-.head {
-    border: 3px solid red;
-}
+
 .drop {
-    width: 50%;
-    height: 100%;
-    border: 1px solid green;
+    width: 45%;
 }
 .drop ul {
     display: flex;
     justify-content: space-between;
+    height: 100%;
+    color: white;
 }
-.dropdown {
-    background: yellow;
+.drop ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drop ul li a{
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 li {
     display: block;
     transition-duration: 0.5s;
+    height: 100%;
 }
-li:hover {
-    cursor: pointer;
+   
+   li:hover {
+     cursor: pointer;
+   }
+   
+   .home {
+       position: relative;
+   }
+   ul li ul {
+     visibility: hidden;
+     opacity: 0;
+     position: absolute;
+     transition: 0.5s;
+     margin-top: 1rem;
+     left: -50px;
+     top: 30px;
+     width: 200px;
+   }
+   
+   ul li:hover > ul,
+   ul li ul:hover {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+   }
+   
+   ul li ul li {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   }
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all .5s ease;
-    margin-top: 1rem;
-    left: 0;
-    display: none;
+.dropdown a:hover{
+    background: rgb(21,190,161);
 }
-
-ul li:hover > ul, ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-}
-
-
-
-
 
 
 
