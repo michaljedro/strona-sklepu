@@ -29,5 +29,19 @@ btnPrevious.addEventListener('click', function () {
     images[imagesCounter].classList.toggle('visible');
 })
 
+// on hover hide div text on images - section three
 
+var container = document.querySelectorAll('.slider__img');
+
+console.log(container);
+
+var imgs = document.querySelectorAll('.slider__img div');
+
+console.log(imgs);
+
+container.forEach(function(item, index) {
+    item.addEventListener('click', function(event){
+        imgs[index].classList.toggle('slider__img--hidden')
+    })
+})
 
