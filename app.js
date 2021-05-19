@@ -40,8 +40,12 @@ var imgs = document.querySelectorAll('.slider__img div');
 console.log(imgs);
 
 container.forEach(function(item, index) {
-    item.addEventListener('click', function(event){
+    item.addEventListener('mouseover', function(e){
         imgs[index].classList.toggle('slider__img--hidden')
     })
 })
-
+container.forEach(function(item, index) {
+    item.addEventListener('mouseout', function(e){
+        imgs[index].classList.toggle('slider__img--hidden')
+    })
+})
