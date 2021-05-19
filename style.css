@@ -10,6 +10,7 @@
     margin: 0 auto;
     max-width: 1400px;
     font-family: 'Raleway', sans-serif;
+    /* border: 1px solid red; */
 }
 
 header {
@@ -39,6 +40,16 @@ header {
     display:flex;
     justify-content:space-between;
   }
+  .head__logo {
+      display: flex;
+      align-items: center;
+      color:white;
+      font-weight: bold;
+  }
+  .head__logo span{
+   color:rgb(21,190,161) ; 
+  }
+
   .drop {
     width:45%;
     background-color: black;
@@ -510,6 +521,7 @@ input[type='checkbox']:checked::after {
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 50px;
+    margin-right: auto;
     width: 90%;
     height: 75%;
 }
