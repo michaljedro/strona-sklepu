@@ -358,8 +358,16 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-
+.offert__item--up h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.offert__item--up p {
+    font-weight: bold;
+    font-size: 20px;
+}
 .offert__item--plan1 {
     color: #24baa0;
 }
