@@ -370,10 +370,27 @@ main {
     background-color: rgb(228,228,228);
     width: 99%;
     text-align: center;
+}
+.offert__item--option1 p:nth-of-type(odd) {
+    background-color: rgb(228,228,228);
     padding: 5px;
 }
-.offert__item--option1 p {
-    margin: 5px;
+.offert__item--option1 p:nth-of-type(even) {
+    background-color: rgb(241,241,241);
+    padding: 5px;
+}
+.offert__item--option2 {
+    background-color: rgb(228,228,228);
+    width: 100%;
+    text-align: center;
+}
+.offert__item--option2 p:nth-of-type(odd) {
+    background-color: rgb(228,228,228);
+    padding: 5px;
+}
+.offert__item--option2 p:nth-of-type(even) {
+    background-color: rgb(241,241,241);
+    padding: 5px;
 }
 .offert__item--btn button {
         border: 5px solid black;
