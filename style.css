@@ -6,6 +6,9 @@
 .body {
     font-family: 'Raleway', sans-serif;
 }
+/* footer, section,main,nav,header {
+    display: none;
+} */
 .container {
     margin: 0 auto;
     max-width: 1400px;
