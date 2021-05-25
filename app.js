@@ -49,3 +49,5 @@ container.forEach(function(item, index) {
         imgs[index].classList.toggle('slider__img--hidden')
     })
 })
+
+var 
