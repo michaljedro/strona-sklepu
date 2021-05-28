@@ -1,21 +1,28 @@
 var arrBtn = document.querySelectorAll('.list_arrow');
 
-console.log(arrBtn);
 
 arrBtn.forEach(function(item) {
     item.addEventListener('click', function(){
-        item.style.display = 'block';
-        
+        item.nextElementSibling.classList.toggle('show');    
     })
 })
 
-let val = document.querySelectorAll('.list_panel li');
-console.log(val);
-console.log(val.length);
+var items = document.querySelectorAll('ul li');
 
-val.forEach(item => console.log(item.value));
+var title = document.querySelector('.title');
+var color = document.querySelector('.color');
+var pattern = document.querySelector('.patter');
+var transport = document.querySelector('.transport');
 
-val.addEventListener('click', function() {
-    val.forEach(item => console.log(item.value));
+console.log(items);
+
+items.forEach(item=> {
+    item.addEventListener('click', function(item,index){
+        let valueItem = item.currentTarget.value;
+        console.log(valueItem);
+        if(index<3) {
+            console.log('')
+        }
+
+    })
 })
-

@@ -5,6 +5,7 @@ body {
   
   
   .application {
+    position: relative;
     background-color: #f9f9f9;
     width: 100vw;
     height: 100vh;
@@ -237,7 +238,35 @@ body {
     cursor: pointer;
     color: #585858;
   }
-  
+  .list_panel li:hover {
+    background: #24baa0;
+    height: 100%;
+    width: 100%;
+    margin-top:10px;
+    cursor: pointer;
+    color: #585858;
+  }
+  .show {
+    display: block;
+  }
   .title {
     height: 30px;
   }
+
+.logo {
+  background: black;
+  width: 100vw;
+  height: 5vh;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+.logo a span {
+  color: #24baa0;
+}
