@@ -10,8 +10,11 @@ arrBtn.forEach(function(item) {
 var items = document.querySelectorAll('ul li');
 let sum = document.querySelector('.sum');
 
+let array =[];
 
 items.forEach((item) => {
+
+let array =[];
 
   item.addEventListener("click", function(item) {
 
@@ -43,7 +46,6 @@ items.forEach((item) => {
 
                     titleRight.innerHTML = val6;
 
-
                   } else if (item.currentTarget.dataset.id <= 8){
 
                     let txt8 = item.currentTarget.innerText;
@@ -57,6 +59,7 @@ items.forEach((item) => {
                     titleLeft.innerHTML = txt8;
 
                     titleRight.innerHTML = val8;
+
     } 
   });
 });
