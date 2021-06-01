@@ -57,8 +57,6 @@ items.forEach((item) => {
                     titleLeft.innerHTML = txt8;
 
                     titleRight.innerHTML = val8;
-
-
     } 
   });
 });
