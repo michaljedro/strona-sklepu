@@ -7,16 +7,13 @@ arrBtn.forEach(function(item) {
     })
 })
 
-
-let inpu = document.querySelector('.checkbox input');
-console.log(inpu);
-
 var items = document.querySelectorAll('ul li');
 let sum = document.querySelector('.sum');
 
+
 items.forEach((item) => {
-  item.addEventListener("click", function (item) {
-    let valueItem = item.currentTarget.value;
+
+  item.addEventListener("click", function(item) {
 
         if (item.currentTarget.dataset.id <= 3) {
 
@@ -24,7 +21,6 @@ items.forEach((item) => {
 
         let val3 = item.currentTarget.value;
 
-        
         let titleLeft = document.querySelector(".panel_left .title");
 
         let titleRight = document.querySelector(".panel_right .title");
@@ -32,7 +28,6 @@ items.forEach((item) => {
         titleLeft.innerHTML = txt3;
 
         titleRight.innerHTML = val3;
-
 
             } else if (item.currentTarget.dataset.id <= 6) {
 
@@ -49,7 +44,8 @@ items.forEach((item) => {
                     titleRight.innerHTML = val6;
 
 
-                } else if (item.currentTarget.dataset.id <= 8){
+                  } else if (item.currentTarget.dataset.id <= 8){
+
                     let txt8 = item.currentTarget.innerText;
 
                     let val8 = item.currentTarget.value;
@@ -63,10 +59,6 @@ items.forEach((item) => {
                     titleRight.innerHTML = val8;
 
 
-    } else if(document.querySelector('.checkbox input').check = true){
- 
-    console.log('ciapka')
-
-    }
+    } 
   });
 });
