@@ -1,2 +1,1 @@
 # strona-sklepu
-warsztat bootcamp
