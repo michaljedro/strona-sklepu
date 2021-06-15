@@ -59,7 +59,6 @@ let array =[];
                     titleLeft.innerHTML = txt8;
 
                     titleRight.innerHTML = val8;
-
     } 
   });
 });
