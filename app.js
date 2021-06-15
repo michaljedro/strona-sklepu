@@ -49,7 +49,3 @@
 //         imgs[index].classList.toggle('slider__img--hidden')
 //     })
 // })
-
-
-var textToUpperCase = document.querySelector('.slider__text--block h1');
-console.log(textToUpperCase);
