@@ -255,11 +255,100 @@ body {
   background-color: rgb(241, 241, 241);
   height: 700px;
 }
-.offer__item {
-  background-color: yellow;
+.offer__header {
+  margin: 40px 0;
+  border-bottom: 5px solid var(--color-primary);
+  width: 300px;
+}
+.offer__item--main {
+  background-color: rgb(249, 249, 249);
   height: 505px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+.offer__item--special {
+  background-color: var(--color-primary);
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.offer__plan--main {
+  color: var(--color-primary);
+}
+.offer__plan--special {
+  color: rgb(255, 255, 255);
+}
+.offer__btn {
+  border: 5px solid black;
+  width: 121px;
+  height: 36px;
+  background-color: rgb(38, 197, 169);
+  border-radius: 4px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  padding: 6px 15px;
+  margin-right: auto;
+  text-decoration: none;
+}
+.offer__btn--special {
+  border: 5px solid black;
+  width: 121px;
+  height: 36px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-primary);
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  padding: 6px 15px;
+  margin-right: auto;
+  text-decoration: none;
+}
+.offer__item--main {
+  position: relative;
+}
+.offer__circle--grey {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: rgb(194, 194, 194);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.offer__circle--white {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: -30px;
+  border: 1px solid rgb(194, 194, 194);
+  z-index: 1;
+}
+.offer__circle--green {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: -30px;
+  border: 1px solid var(--color-primary);
+  z-index: 1;
 }
