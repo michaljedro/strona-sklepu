@@ -260,13 +260,148 @@ body {
   border-bottom: 5px solid var(--color-primary);
   width: 300px;
 }
-.offer__item--main {
+
+.offer__plan {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.offer__prize--white {
+  border: 1px solid rgb(194, 194, 194);
+  color: rgb(194, 194, 194);
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offer__prize--green {
+  border: 1px solid rgb(194, 194, 194);
+  background-color: rgb(241, 241, 241);
+  color: rgb(194, 194, 194);
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer__plan--type {
+  color: var(--color-primary);
+}
+.offer__plan--standard {
+  color: white;
+}
+.offer__option {
+  height: 200px;
+}
+.offer__option--paragraph {
+  color: rgb(148, 148, 148);
+  width: 99%;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+.offer__option--paragraph:nth-of-type(1) {
+  background-color: rgb(228, 228, 228);
+}
+.offer__option--paragraph:nth-of-type(2) {
+  background-color: rgb(241, 241, 241);
+}
+.offer__option--paragraph:nth-of-type(3) {
+  background-color: rgb(228, 228, 228);
+}
+.offer__option--paragraph:nth-of-type(4) {
+  background-color: rgb(241, 241, 241);
+}
+
+.offer__item--basic {
+  background-color: rgb(249, 249, 249);
+  height: 500px;
+  position: relative;
+}
+.offer__item--special {
+  background-color: var(--color-primary);
+  height: 500px;
+  position: relative;
+}
+
+.offer__btn {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer__btn--green {
+  border: 5px solid black;
+  width: 121px;
+  height: 36px;
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  padding: 6px 15px;
+  text-decoration: none;
+}
+
+.offer__btn--white {
+  border: 5px solid black;
+  width: 121px;
+  height: 36px;
+  background-color: rgb(241, 241, 241);
+  color: black;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-primary);
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  padding: 6px 15px;
+  text-decoration: none;
+}
+
+.offer__circle--grey {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: rgb(194, 194, 194);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.offer__circle--white {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: -30px;
+  left: 133.5px;
+  border: 1px solid rgb(194, 194, 194);
+  z-index: 1;
+}
+/* .offer__item--main {
   background-color: rgb(249, 249, 249);
   height: 505px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .offer__item--special {
   background-color: var(--color-primary);
@@ -319,6 +454,9 @@ body {
 .offer__item--main {
   position: relative;
 }
+.offer__item--special {
+  position: relative;
+}
 .offer__circle--grey {
   height: 20px;
   width: 20px;
@@ -346,9 +484,45 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: white;
+  background: var(--color-primary);
   position: absolute;
   top: -30px;
   border: 1px solid var(--color-primary);
-  z-index: 1;
+  z-index: 2;
 }
+.offer__circle--whiter {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.offer__item--prize {
+  background-color: white;
+  border: 2px solid rgb(213, 213, 213);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.offer__option {
+  width: 99%;
+  position: absolute;
+  top: 300px;
+}
+.offer__option--paragraph {
+  height: 30px;
+  background-color: yellow;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+} */
