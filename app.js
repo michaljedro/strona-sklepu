@@ -38,6 +38,7 @@ container.forEach(function(item, index) {
         imgs[index].classList.toggle('image__caption--hidden')
     })
 })
+
 container.forEach(function(item, index) {
     item.addEventListener('mouseout', function(e){
         imgs[index].classList.toggle('image__caption--hidden')
