@@ -64,8 +64,23 @@
 
       <div class="col-5 slider__image">
 
-        <div class="slider__image--img">
-          <img src="./images/black_chair.png" alt="black_chair">
+        <div class="slider__image--container">
+          
+          <img 
+          src="./images/black_chair.png"
+          class='slider__image--img visible'  
+          alt="black_chair"
+          >
+
+          <img 
+          src="./images/red_chair.png" class='slider__image--img ' alt="black_chair"
+          >
+
+          <img 
+          src="./images/orange_chair.png" class='slider__image--img' alt="black_chair"
+          >
+
+
         </div>
 
       </div>
@@ -73,7 +88,7 @@
       <div class="col-5 slider__text">
       
         <div class="slider__text--block">
-          <h1 class="slider__text--header">sit <span class="slider__text--span">on</span> our <span class="slider__text--span">chair</span></h1>
+          <h1 class="slider__text--header">SIT <span class="slider__text--span">ON</span> OUR <span class="slider__text--span">CHAIR</span></h1>
           <p class="slider__text--para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aspernatur quae laborum totam quibusdam minima sed eius cupiditate ut placeat? Lorem ipsum dolor sit amet.
           </p>
@@ -81,7 +96,6 @@
       </div>
 
       </div>
-
       <div class="col-1 slider__arrow">
         <i class="fas fa-chevron-right"></i>
       </div>
@@ -98,7 +112,7 @@
       <div class="col-4">
         <div class="image">
           <img class="image__img" src="./images/box1_img.jpg" alt="chair clair">
-          <div class="image__caption">
+          <div class="image__caption ">
             <h4 class="header">Chair CLAIR</h4>
           </div>
         </div>
@@ -264,8 +278,8 @@
             <img class='contact__send--img' src="./images/red_chair.png" alt="red chair">
 
             <div class="contact__send--wrapper">
-                <input type="checkbox" class="contact__send--input">
-                <label class="contact__send--text">
+                <input type="checkbox" id='approve' class="contact__send--input">
+                <label for='approve' class="contact__send--text">
                     Zgadzam się na przetwarzanie danych osobowych
                 </label>
             </div>
