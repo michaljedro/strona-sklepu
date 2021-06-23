@@ -76,6 +76,7 @@ items.forEach((item) => {
     } 
   });
 });
+
 function countCal(arr) {
   var prize = 0;
   var transItem = document.querySelector('#transport');
