@@ -1,46 +1,35 @@
-var arrBtn = document.querySelectorAll('.list_arrow')
+const chairTypeSelect = document.querySelector('#chair-type')
+const chairColorSelect = document.querySelector('#chair-color')
+const chairMaterialSelect = document.querySelector('#chair-material')
+const transportCheckbox = document.querySelector('#transport')
+const totalPriceBox = document.querySelector('#total-price')
 
-arrBtn.forEach(function (item) {
-  item.addEventListener('click', function () {
-    item.nextElementSibling.classList.toggle('show')
-  })
-})
+const selects = [chairTypeSelect, chairColorSelect, chairMaterialSelect]
 
-var items = document.querySelectorAll('ul li')
-let sum = document.querySelector('.sum')
+const getSelectedOptions = () => {
+  const selectedOptions = selects.filter(select => select.selectedIndex > 0)
+    .map(select => select.options[select.selectedIndex])
+  return selectedOptions
+}
 
-let array = []
+const recalculatePrice = () => {
+  let sum = 0
+  const selectedOptions = getSelectedOptions()
+  for (const selectedOption of selectedOptions) {
+    const priceAttribute = selectedOption.dataset.price
+    const price = Number.parseInt(priceAttribute, 10)
+    sum += price
+  }
 
-items.forEach((item) => {
-  let array = []
-  item.addEventListener('click', function (item) {
-    if (item.currentTarget.dataset.id <= 3) {
-      let txt3 = item.currentTarget.innerText
-      let val3 = item.currentTarget.value
+  if (transportCheckbox.checked) {
+    const priceAttr = transportCheckbox.dataset.price
+    sum += Number.parseInt(priceAttr, 10)
+  }
 
-      let titleLeft = document.querySelector('.panel_left .title')
-      let titleRight = document.querySelector('.panel_right .title')
+  totalPriceBox.innerText = sum
+}
 
-      titleLeft.innerHTML = txt3
-      titleRight.innerHTML = val3
-    } else if (item.currentTarget.dataset.id <= 6) {
-      let txt6 = item.currentTarget.innerText
-      let val6 = item.currentTarget.value
-
-      let titleLeft = document.querySelector('.panel_left .color')
-      let titleRight = document.querySelector('.panel_right .color')
-
-      titleLeft.innerHTML = txt6
-      titleRight.innerHTML = val6
-    } else if (item.currentTarget.dataset.id <= 8) {
-      let txt8 = item.currentTarget.innerText
-      let val8 = item.currentTarget.value
-
-      let titleLeft = document.querySelector('.panel_left .pattern')
-      let titleRight = document.querySelector('.panel_right .pattern')
-
-      titleLeft.innerHTML = txt8
-      titleRight.innerHTML = val8
-    }
-  })
-})
+chairTypeSelect.addEventListener('change', recalculatePrice)
+chairColorSelect.addEventListener('change', recalculatePrice)
+chairMaterialSelect.addEventListener('change', recalculatePrice)
+transportCheckbox.addEventListener('change', recalculatePrice)
