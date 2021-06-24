@@ -41,22 +41,21 @@ body {
     margin-top: 50px;
 }
 
-.drop_down_list {
+.dropdown-list {
     border: 1px solid #8de0d2;
     width: 280px;
-    height: 38px;
-    background-color: white;
     margin-top: 22px;
-    padding: 8px 12px;
+    padding: 8px 36px 12px 8px;
     position: relative;
-}
 
-.list_label {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no' %3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width='32' height='32' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cg transform='matrix(-0.36 0 0 -0.16 16 16)' id='c0b64a42-7c4b-4913-85c4-4d36033e1533' %3E%3Cpolygon style='stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(36,186,160); fill-rule: nonzero; opacity: 1;' vector-effect='non-scaling-stroke' points='-37.43,32.41 0,-32.41 37.43,32.41 ' /%3E%3C/g%3E%3C/svg%3E") 96% / 15% no-repeat #eee;
+
     font-size: 30px;
-    color: #e2e2e2;
     font-family: 'ralewaylight', Arial, Tahoma, sans-serif;
 }
-
 
 .checkbox {
     position: relative;
@@ -182,49 +181,6 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-grow: 1;
-}
-
-.list_arrow {
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid #24baa0;
-    display: block;
-    position: absolute;
-    right: 14px;
-    top: 20px;
-    cursor: pointer;
-}
-
-.list_panel {
-    background-color: white;
-    border: 1px solid #ccc;
-    width: 288px;
-    padding-left: 15px;
-    padding-bottom: 10px;
-    list-style: none;
-    margin: 0;
-    left: 0px;
-    z-index: 2;
-    position: absolute;
-    top: 54px;
-    display: none;
-}
-
-.list_panel li {
-    margin-top: 10px;
-    cursor: pointer;
-    color: #585858;
-}
-
-.list_panel li:hover {
-    background: #24baa0;
-    height: 100%;
-    width: 100%;
-    margin-top: 10px;
-    cursor: pointer;
-    color: #585858;
 }
 
 .show {

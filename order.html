@@ -21,38 +21,27 @@
       </header>
 
       <div class="form">
-        <div class="drop_down_list">
-          <span class="list_label">Wybierz rodzaj</span>
-          <span class="list_arrow"></span>
-          <ul class="list_panel">
-            <li value="250" data-id='1'>Clair</li>
-            <li value="250" data-id='2'>Margarita</li>
-            <li value="250" data-id='3'>Selena</li>
-          </ul>
-        </div>
-        <div class="drop_down_list">
-          <span class="list_label">Wybierz kolor</span>
-          <span class="list_arrow"></span>
-          <ul class="list_panel">
-            <li value="500" data-id='4'>Czerwony</li>
-            <li value="500" data-id='5'>Czarny</li>
-            <li value="500" data-id='6'>Pomarańczowy</li>
-          </ul>
-        </div>
-        <div class="drop_down_list">
-          <span class="list_label">Wybierz materiał</span>
-          <span class="list_arrow"></span>
-          <ul class="list_panel">
-            <li value="250" data-id='7'>Tkanina</li>
-            <li value="250" data-id='8'>Skóra</li>
-          </ul>
-        </div>
+        <select id="chair-type" class="dropdown-list">
+          <option selected disabled>Wybierz rodzaj</option>
+          <option value="clair" data-price="250">Clair</option>
+          <option value="margarita" data-price="250">Margarita</option>
+          <option value="selena" data-price="250">Selena</option>
+        </select>
+        <select id="chair-color" class="dropdown-list">
+          <option selected disabled>Wybierz kolor</option>
+          <option value="czerwony" data-price="500">Czerwony</option>
+          <option value="czarny" data-price="500">Czarny</option>
+          <option value="pomarańczowy" data-price="500">Pomarańczowy</option>
+        </select>
+        <select id="chair-material" class="dropdown-list">
+          <option selected disabled>Wybierz materiał</option>
+          <option value="tkanina" data-price="250">Tkanina</option>
+          <option value="skóra" data-price="250">Skóra</option>
+        </select>
         <div class="checkbox check-box">
           <input type="checkbox" id="transport" data-price="300">
           <label for="transport">Transport</label>
         </div>
-        <!--<div class="checkbox"></div>-->
-        <!--<span class="list_label inline_text">Transport</span>-->
       </div>
     </section>
 
