@@ -1,2 +1,2 @@
 # strona-sklepu
-warsztat bootcamp
+index2.html - refactor to Bootstrap 4 grid
