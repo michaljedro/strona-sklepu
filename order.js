@@ -1,65 +1,46 @@
-var arrBtn = document.querySelectorAll('.list_arrow');
+var arrBtn = document.querySelectorAll('.list_arrow')
 
-
-arrBtn.forEach(function(item) {
-    item.addEventListener('click', function(){
-        item.nextElementSibling.classList.toggle('show');    
-    })
+arrBtn.forEach(function (item) {
+  item.addEventListener('click', function () {
+    item.nextElementSibling.classList.toggle('show')
+  })
 })
 
-var items = document.querySelectorAll('ul li');
-let sum = document.querySelector('.sum');
+var items = document.querySelectorAll('ul li')
+let sum = document.querySelector('.sum')
 
-let array =[];
+let array = []
 
 items.forEach((item) => {
+  let array = []
+  item.addEventListener('click', function (item) {
+    if (item.currentTarget.dataset.id <= 3) {
+      let txt3 = item.currentTarget.innerText
+      let val3 = item.currentTarget.value
 
-let array =[];
+      let titleLeft = document.querySelector('.panel_left .title')
+      let titleRight = document.querySelector('.panel_right .title')
 
-  item.addEventListener("click", function(item) {
+      titleLeft.innerHTML = txt3
+      titleRight.innerHTML = val3
+    } else if (item.currentTarget.dataset.id <= 6) {
+      let txt6 = item.currentTarget.innerText
+      let val6 = item.currentTarget.value
 
-        if (item.currentTarget.dataset.id <= 3) {
+      let titleLeft = document.querySelector('.panel_left .color')
+      let titleRight = document.querySelector('.panel_right .color')
 
-        let txt3 = item.currentTarget.innerText;
+      titleLeft.innerHTML = txt6
+      titleRight.innerHTML = val6
+    } else if (item.currentTarget.dataset.id <= 8) {
+      let txt8 = item.currentTarget.innerText
+      let val8 = item.currentTarget.value
 
-        let val3 = item.currentTarget.value;
+      let titleLeft = document.querySelector('.panel_left .pattern')
+      let titleRight = document.querySelector('.panel_right .pattern')
 
-        let titleLeft = document.querySelector(".panel_left .title");
-
-        let titleRight = document.querySelector(".panel_right .title");
-
-        titleLeft.innerHTML = txt3;
-
-        titleRight.innerHTML = val3;
-
-            } else if (item.currentTarget.dataset.id <= 6) {
-
-                    let txt6 = item.currentTarget.innerText;
-
-                    let val6 = item.currentTarget.value;
-
-                    let titleLeft = document.querySelector('.panel_left .color');
-
-                    let titleRight = document.querySelector('.panel_right .color');
-
-                    titleLeft.innerHTML = txt6;
-
-                    titleRight.innerHTML = val6;
-
-                  } else if (item.currentTarget.dataset.id <= 8){
-
-                    let txt8 = item.currentTarget.innerText;
-
-                    let val8 = item.currentTarget.value;
-
-                    let titleLeft = document.querySelector('.panel_left .pattern');
-
-                    let titleRight = document.querySelector('.panel_right .pattern');
-
-                    titleLeft.innerHTML = txt8;
-
-                    titleRight.innerHTML = val8;
-
-    } 
-  });
-});
+      titleLeft.innerHTML = txt8
+      titleRight.innerHTML = val8
+    }
+  })
+})
