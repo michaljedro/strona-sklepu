@@ -412,7 +412,13 @@ body {
   border: 1px solid rgb(194, 194, 194);
   z-index: 1;
 }
-
+.offer__circle--green {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.offer__inner--white {
+  background-color: white;
+}
 .contact {
   height: 500px;
 }

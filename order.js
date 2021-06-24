@@ -79,22 +79,32 @@ items.forEach((item) => {
 
 function countCal(arr) {
   var prize = 0;
-  var transItem = document.querySelector('#transport');
-  var tranText = document.querySelector('.panel_right .transport');
-
-  if(transItem.checked) {
-    var transValue = transItem. getAttribute('data-price');
-    console.log(transValue);
-    tranText.innerText = transValue
-  }
+  
   for ( var i=0; i<arr.length;i++) {
     prize+=arr[i];
   }
+  // var transValue = transItem. getAttribute('data-price');
+  // var prizeTrans = parseInt(transValue);
+  // prize+=prizeTrans;
+
 var prizeItem = document.querySelector('.sum');
-var showPrize = prizeItem.innerText = prize
-
-
+var showPrize = prizeItem.innerText = prize;
   return showPrize
 }
 
 
+var transItem = document.querySelector('#transport');
+
+transItem.addEventListener('click', function(){
+  var tranText = document.querySelector('.panel_right .transport');
+  
+    if(transItem.checked) {
+      var transValue = transItem.getAttribute('data-price');
+      var prizeTrans = parseInt(transValue);
+      tranText.innerText = transValue;
+      countCal(prizeTrans);
+    } else {
+      var transValue = transItem.getAttribute('data-price');
+      tranText.innerText = '';
+    }
+})
