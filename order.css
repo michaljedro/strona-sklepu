@@ -155,7 +155,6 @@ body {
 }
 
 .summary_panel--up {
-    display: flex;
     height: 70%;
 }
 
@@ -167,20 +166,17 @@ body {
     padding-left: 10px;
 }
 
-.panel_left {
+#summary-selected-option-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
-.panel_right {
+.selected-option {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 1;
+    justify-content: space-between;
+    padding: 16px 36px;
 }
 
 .show {

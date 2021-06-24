@@ -39,7 +39,7 @@
           <option value="skóra" data-price="200">Skóra</option>
         </select>
         <div class="checkbox check-box">
-          <input type="checkbox" id="transport" data-price="300">
+          <input type="checkbox" id="transport" value="transport" data-price="300">
           <label for="transport">Transport</label>
         </div>
       </div>
@@ -57,18 +57,13 @@
 
       <div class="summary_panel">
         <div class="summary_panel--up">
-          <div class="panel_left">
-            <h4 class="title"></h4>
-            <span class="color"></span>
-            <span class="pattern"></span>
-            <span class="transport"></span>
-          </div>
-          <div class="panel_right">
-            <h4 class="title value"></h4>
-            <span class="color value"></span>
-            <span class="pattern value"></span>
-            <span class="transport value"></span>
-          </div>
+          <div id="summary-selected-option-container"></div>
+          <template id="summary-selected-option">
+            <div class="selected-option">
+              <div class="selected-option--name"></div>
+              <div class="selected-option--price"></div>
+            </div>
+          </template>
         </div>
 
         <div class="summary_panel--down">
