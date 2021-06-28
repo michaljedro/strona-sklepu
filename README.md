@@ -1,2 +1,1 @@
-# strona-sklepu
-index2.html - refactor to Bootstrap 4 grid
+used Bootstrap 4 grid. 
